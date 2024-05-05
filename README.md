@@ -1,6 +1,6 @@
 # Simple scoring of text fragments
 
-##Idea
+## Idea
 
 We have a collection of words with frequencies (corpus).
 We need a fast estimator of frequncy for new words arrived. If arrived word is contained in the corpus we already lnow it frequency.
@@ -15,7 +15,7 @@ Actualy this way is a pure semi-naive bayes approach, but it works. ))
 For scoring we use notation minus-log10, so score 7.65 is equal to probability 10^-7.65.
 
 
-##Test corpus
+## Test corpus
 We can use Google N-Gram dataset for testing
 
 wget -ci google.1gram && zcat google*.gz | grep '^[a-zA-Z0-9]*[[:blank:]]' | cut -f 1,3 | LC_ALL=C sort >big.corpus
