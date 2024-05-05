@@ -1,0 +1,11 @@
+---
+source: data/gng1.freq
+system:
+  threads: 4
+  maxout: 6
+http:
+  service: 0.0.0.0:7234
+  metrics: 127.0.0.1:7235
+logger:
+  file: data/log
+  request: data/requests
