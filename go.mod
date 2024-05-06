@@ -1,4 +1,4 @@
-module radaris/split1
+module github.com/dlobashevsky/snngram
 
 go 1.20
 

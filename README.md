@@ -21,4 +21,9 @@ We can use Google N-Gram dataset for testing
 wget -ci google.1gram && zcat google*.gz | grep '^[a-zA-Z0-9]*[[:blank:]]' | cut -f 1,3 | LC_ALL=C sort >big.corpus
 This corpus have duplicated records, so you need to join same ngrams by awk or other preferred language.
 
+## Compile
+
+go mod tidy
+go build
+
 
