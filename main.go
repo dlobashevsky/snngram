@@ -67,7 +67,8 @@ func getSplit2(w http.ResponseWriter, r *http.Request) {
   if err != nil {
     http.Error(w,"Error reading request body",http.StatusInternalServerError)
   }
-  w.Header().Set("Content-Type", "application-json")
+  w.Header().Set("Content-Type", "application/json")
+  w.Header().Set("accept", "application/json")
 
   io.WriteString(w,procSplit2(string(body)))
 }
